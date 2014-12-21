@@ -1,0 +1,8 @@
+<ul class="meta list-inline">
+  <li><%= Russian::strftime(article.date, '%d %B %Y') %></li>
+  <li>
+    <img alt="" class="img-circle img-avatar" height="24" src="<%= article.data.author.avatar %>" width="24">
+    <%= article.data.author.login %>
+  </li>
+  <li><%= article.data.category %></li>
+</ul>

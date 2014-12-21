@@ -1,0 +1,32 @@
+---
+title: Улучшенный просмотр задачи
+date: 2014/05/30
+tags: задача
+category: изменения
+layout: application
+annotation:
+  text: 'Страница с которой наши пользователи работают больше всего — это просмотр задачи. Сегодня мы ее немого улучшили!'
+  image: https://cloud.helpdeskapp.ru/files/243/850-550/new-issue-page.png
+author:
+  login: tab
+  avatar: https://secure.gravatar.com/avatar/6279bc07cdb06a5fe08a02816887d4d0.jpg
+---
+
+<% if current_page.data.any? %>
+<article class="post">
+  <h2><%= link_to 'Helpdeskapp блог', '/blog' %> / <%= current_page.title %></h2>
+  <%= partial 'layouts/commons/meta', :locals => { :article => current_page } %>
+
+  <div class="description">
+    <%= partial 'layouts/commons/annotation', :locals => { :article => current_page } %>
+
+    <p>Мы добавили блок из которого можно узнать приоритет задачи: красный — высокий, желтый — средний и зеленый — низкий. В этом же блоке можно увидеть когда истекает срок выполнения задачи.</p>
+
+    <p>Кнопка добавления участников теперь занимает гораздо меньше места.</p>
+
+    <p>И наконец самое главное: слишком длинные списки затраченного времени и вложения теперь скрыты до минимально необходимой длины. Кнопка «Показать еще» раскрывает весь список.</p>
+  </div>
+
+  <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+</article>
+<% end %>

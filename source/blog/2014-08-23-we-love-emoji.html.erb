@@ -1,0 +1,28 @@
+---
+title: Эмодзи для ваших задач
+date: 2014/08/23
+tags: emoji
+category: изменения
+layout: application
+annotation:
+  text: Сегодня мы добавили поддержку эмодзи! Добавляйте больше эмоций в ваши задачи, чек-листы и комментарии.
+  image: https://cloud.helpdeskapp.ru/files/496/850-522/emojify.png
+author:
+  login: tab
+  avatar: https://secure.gravatar.com/avatar/6279bc07cdb06a5fe08a02816887d4d0.jpg
+---
+
+<% if current_page.data.any? %>
+<article class="post">
+  <h2><%= link_to 'Helpdeskapp блог', '/blog' %> / <%= current_page.title %></h2>
+  <%= partial 'layouts/commons/meta', :locals => { :article => current_page } %>
+
+  <div class="description">
+    <%= partial 'layouts/commons/annotation', :locals => { :article => current_page } %>
+
+    <p><a href="http://www.emoji-cheat-sheet.com">emoji cheatsheet</a> – список доступных иконок.</p>
+  </div>
+
+  <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+</article>
+<% end %>

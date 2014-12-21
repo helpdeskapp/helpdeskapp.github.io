@@ -1,0 +1,26 @@
+---
+title: Настройка уведомлений
+date: 2014/05/10
+tags: уведомления
+category: изменения
+layout: application
+annotation:
+  text: 'В Helpdeskapp есть два типа уведомлений: о назначении исполнителем задачи и о новых комментариях к вашим задачам. Все уведомления можно найти на странице уведомлений, копия уведомления отправляется на электронную почту указанную при регистрации аккаунта. Сегодня мы добавили возможность управлять уведомлениями, которые вы будете получать. Для этого на странице настроек аккаунта просто выберите какие вы хотите получать уведомления, либо отключите их вовсе.'
+  image: https://cloud.helpdeskapp.ru/files/141/850-558/notification-settings.png
+author:
+  login: tab
+  avatar: https://secure.gravatar.com/avatar/6279bc07cdb06a5fe08a02816887d4d0.jpg
+---
+
+<% if current_page.data.any? %>
+<article class="post">
+  <h2><%= link_to 'Helpdeskapp блог', '/blog' %> / <%= current_page.title %></h2>
+  <%= partial 'layouts/commons/meta', :locals => { :article => current_page } %>
+
+  <div class="description">
+    <%= partial 'layouts/commons/annotation', :locals => { :article => current_page } %>
+  </div>
+
+  <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+</article>
+<% end %>

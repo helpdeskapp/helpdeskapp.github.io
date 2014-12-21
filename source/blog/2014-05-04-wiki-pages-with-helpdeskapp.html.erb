@@ -1,0 +1,30 @@
+---
+title: Делитесь знаниями с помощью wiki-статей
+date: 2014/05/04
+tags: wiki, knowledges
+category: изменения
+layout: application
+annotation:
+  text: Сегодня для всех пользователей Helpdeskapp стала доступна возможность добавления wiki-статей. Такая статья может содержать инструкции по установке и настройке ПО, которое используется всеми сотрудниками организации.
+  image: https://cloud.helpdeskapp.ru/files/142/850-578/wiki-example.png
+author:
+  login: tab
+  avatar: https://secure.gravatar.com/avatar/6279bc07cdb06a5fe08a02816887d4d0.jpg
+---
+
+<% if current_page.data.any? %>
+<article class="post">
+  <h2><%= link_to 'Helpdeskapp блог', '/blog' %> / <%= current_page.title %></h2>
+  <%= partial 'layouts/commons/meta', :locals => { :article => current_page } %>
+
+  <div class="description">
+    <%= partial 'layouts/commons/annotation', :locals => { :article => current_page } %>
+
+    <p>Редактор записей базы знаний позволяет вставлять ссылки на изображения и код видеороликов популярных сервисов, таких как Youtube ли Vimeo.</p>
+
+    <p>Так же вы можете добавлять статьи доступные только вам.</p>
+  </div>
+
+  <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+</article>
+<% end %>

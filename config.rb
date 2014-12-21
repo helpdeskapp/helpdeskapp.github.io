@@ -1,5 +1,10 @@
 require "extensions/views"
 
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.permalink = "{title}"
+end
+
 activate :views
 activate :directory_indexes
 

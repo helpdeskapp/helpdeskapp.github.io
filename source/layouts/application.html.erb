@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1 user-scalable=no">
+    <meta name="description" content="Helpdeskapp сервис для совместного управления проектами" />
+    <meta name="keywords" content="helpdesk, servicedesk, service-desk, сервис, управление проектами, управление задачами, веб-приложение" />
+    <meta name='yandex-verification' content='4d66fcc583829b89' />
+    <meta name="google-site-verification" content="1Iw8Y9rbgvh_KKv6t9vqEUtCY6eMDmdYhkahOV1mtFQ" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@helpdeskapp" />
+    <meta name="twitter:creator" content="@helpdeskapp" />
+    <meta name="twitter:url" content="https://helpdeskapp.ru" />
+    <meta name="twitter:title" content="Helpdeskapp — сервис для совместного управления проектами" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" sizes="192x192" href="/assets/icons/apple-touch-icon-192px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/icons/apple-touch-icon-180px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/icons/apple-touch-icon-152px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/icons/apple-touch-icon-144px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/icons/apple-touch-icon-120px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/icons/apple-touch-icon-114px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/icons/apple-touch-icon-76px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/icons/apple-touch-icon-72px.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/icons/apple-touch-icon-57px.png">
+
+    <title><%#= title %></title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+  </head>
+  <body class="public">
+    <nav class="navbar navbar-inverse navbar-public" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="logo"></span>
+          <%= link_to 'Helpdeskapp', 'https://helpdeskapp.ru', :class => 'navbar-brand' %>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <%= partial 'layouts/menu' %>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="container">
+        <div class="posts">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="footer">
+        <div class="container">
+          Helpdeskapp – сервис для совместного управления проектами
+        </div>
+      </div>
+    </div>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
