@@ -16,7 +16,7 @@ body
     padding: 0
 
   .navbar-header
-    height: 82px
+    height: 80px
     margin: 0 !important
 
     .navbar-toggle
@@ -28,7 +28,7 @@ body
 
   .navbar-collapse
     border: none
-    padding: 15px 0 0 0
+    padding: 22px 0 0 0
 
   .logo
     +inline-block
@@ -66,18 +66,27 @@ body
     padding: 0 15px
 
     li > a
+      background: transparent
       color: #ddd
+      font-weight: 300
+      padding: 5px 15px
 
     .login
       &:hover
 
-    .signup
+    .signup, .active
       +border-radius(3px)
       +transition(all 0.2s ease-in-out)
       border: 1px solid #fff
 
       &:hover
         background: #2c3f50
+
+    .active
+      background: #2c3f50
+
+      a, a:hover
+        background: transparent
 
   .navbar-lead
     color: #ddd
