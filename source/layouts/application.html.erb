@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/icons/apple-touch-icon-72px.png">
     <link rel="apple-touch-icon-precomposed" href="/assets/icons/apple-touch-icon-57px.png">
 
-    <title><%#= title %></title>
+    <title><%= "Helpdeskapp блог / #{current_page.data.title}" %></title>
     <%= stylesheet_link_tag "application", :media => "all" %>
   </head>
   <body class="public">
@@ -61,10 +61,17 @@
       <div class="footer">
         <div class="container">
           Helpdeskapp – сервис для совместного управления проектами
+
+          <ul class="contacts list-inline pull-right">
+            <li><%= link_to 'Блог', 'http://blog.helpdeskapp.ru' %></li>
+            <li><%= link_to '@helpdeskapp', 'https://twitter.com/helpdeskapp' %></li>
+          </ul>
         </div>
       </div>
     </div>
 
     <%= javascript_include_tag "application" %>
   </body>
+
+  <%= partial 'layouts/commons/metrika' %>
 </html>
