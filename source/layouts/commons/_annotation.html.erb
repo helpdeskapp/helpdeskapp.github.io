@@ -3,7 +3,9 @@
     <%= article.data.annotation.text %>
   </p>
 
-  <p>
-    <img class="img-responsive" src="<%= article.data.annotation.image %>" alt="<%= article.title %>" title="<%= article.title %>">
-  </p>
+  <% if article.data.annotation.image %>
+    <p>
+      <img class="img-responsive" src="<%= article.data.annotation.image %>" alt="<%= article.title %>" title="<%= article.title %>">
+    </p>
+  <% end %>
 </div>
