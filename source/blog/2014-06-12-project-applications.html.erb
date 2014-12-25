@@ -23,6 +23,12 @@ author:
     <p>Список добавленных приложений отображается в меню справа. Управление добавленными приложениями доступно из настроек проекта. Пока доступно всего четыре сервиса для добавления в проект, но в будущем мы будем увеличивать этот список.</p>
   </div>
 
-  <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+  <div class="pull-left">
+    <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+  </div>
+
+  <div class="pull-right">
+    <%= partial 'layouts/commons/social_likes' %>
+  </div>
 </article>
 <% end %>

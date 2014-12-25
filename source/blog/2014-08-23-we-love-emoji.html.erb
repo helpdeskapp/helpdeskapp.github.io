@@ -23,6 +23,13 @@ author:
     <p><a href="http://www.emoji-cheat-sheet.com">emoji cheatsheet</a> – список доступных иконок.</p>
   </div>
 
-  <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+  <div class="pull-left">
+    <%= partial 'layouts/commons/tags', :locals => { :article => current_page } %>
+  </div>
+
+  <div class="pull-right">
+    <%= partial 'layouts/commons/social_likes' %>
+  </div>
+
 </article>
 <% end %>
