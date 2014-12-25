@@ -38,8 +38,39 @@
       +border-radius(2px)
       +inline-block
       background: #999
-      color: #fff
       font-size: 12px
       line-height: 22px
       margin: 0 3px 0 0
       padding: 1px 5px 0px 5px
+
+      &:hover
+        background: #bbb
+        cursor: pointer
+
+      a
+        color: #fff
+
+        &:hover
+          text-decoration: none
+
+.blog-tags
+  +border-radius(2px)
+  border: 1px solid #e8e8e8
+  margin: 30px 0
+
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    border-bottom: 1px solid #e8e8e8
+    padding: 2px 10px
+
+    &:hover
+      background: #f9f9f9
+
+    &:last-child
+      border: none
+
+  a:hover
+    text-decoration: none
