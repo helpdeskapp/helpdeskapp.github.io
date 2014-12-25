@@ -3,7 +3,7 @@ require "extensions/views"
 activate :blog do |blog|
   blog.prefix = 'blog'
   blog.permalink = "{title}"
-  blog.taglink = "tags/{tag}"
+  blog.taglink = "tags/{tag}.html"
   blog.tag_template = "blog/tags/tag.html"
 end
 
