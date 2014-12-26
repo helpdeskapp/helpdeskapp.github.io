@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Host: blog.helpdeskapp.ru
+Sitemap: http://blog.helpdeskapp.ru/sitemap.xml
