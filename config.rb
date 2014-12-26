@@ -1,4 +1,4 @@
-require "extensions/views"
+require 'extensions/views'
 
 activate :blog do |blog|
   blog.prefix = 'blog'
