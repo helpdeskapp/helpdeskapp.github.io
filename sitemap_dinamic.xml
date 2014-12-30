@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://blog.helpdeskapp.ruu/</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/404.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/wiki.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/knowledges.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/уведомления.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/задача.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/чек-лист.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/проект.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/github.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/bitbucket.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/newrelic.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/errbit.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://blog.helpdeskapp.ru/blog/tags/emoji.html</loc>
+    <lastmod>2014-12-30 11:37:08 +0600</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
