@@ -5,6 +5,8 @@ activate :blog do |blog|
   blog.permalink = "{title}"
   blog.taglink = "tags/{tag}.html"
   blog.tag_template = "blog/tags/tag.html"
+  blog.layout = "posts"
+  blog.summary_length = 200
 end
 
 activate :views
@@ -15,7 +17,6 @@ set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
-set :layout, 'layouts/application'
 
 configure :development do
  activate :livereload

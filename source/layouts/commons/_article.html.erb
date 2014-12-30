@@ -1,11 +1,14 @@
 <article class="post">
   <h2><%= link_to article.title, article.url %></h2>
+
   <%= partial 'layouts/commons/meta', :locals => { :article => article } %>
 
-  <%= partial 'layouts/commons/annotation', :locals => { :article => article } %>
+  <div class="content">
+    <%= article.body %>
+  </div>
 
   <div class="more">
-    <%= link_to 'Подробнее...', article.url %>
+    <%= link_to 'Подробнее', article.url %>
   </div>
 
   <%= partial 'layouts/commons/tags', :locals => { :article => article } %>

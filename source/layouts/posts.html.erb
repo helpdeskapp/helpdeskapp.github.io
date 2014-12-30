@@ -1,0 +1,22 @@
+<% wrap_layout :layout do %>
+  <article class="post">
+    <h2>
+      <%= link_to 'Helpdeskapp блог', '/' %> /
+      <%= data.page.title %>
+    </h2>
+
+    <%= partial 'layouts/commons/meta', :locals => { :article => current_page } %>
+
+    <div class="content">
+      <%= yield %>
+    </div>
+
+    <div class="meta pull-left">
+      <%= partial 'layouts/commons/tags', :locals => { :article => current_page, :section => :manuals || :softwares } %>
+    </div>
+
+    <div class="pull-right hidden-xs hidden-sm">
+      <%= partial 'layouts/commons/social_likes' %>
+    </div>
+  </article>
+<% end %>

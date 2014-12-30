@@ -3,12 +3,5 @@ title: Все записи
 ---
 
 <% blog.articles[0...10].each do |article| %>
-  <article class="post">
-    <h2><%= link_to article.title, article.url %></h2>
-    <%= partial 'layouts/commons/meta', :locals => { :article => article } %>
-
-    <%= partial 'layouts/commons/annotation', :locals => { :article => article } %>
-
-    <%= partial 'layouts/commons/tags', :locals => { :article => article } %>
-  </article>
+  <%= partial 'layouts/commons/article', :locals => { :article => article } %>
 <% end %>
