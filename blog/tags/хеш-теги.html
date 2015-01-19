@@ -11,7 +11,7 @@
     <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@helpdeskapp" />
 <meta name="twitter:creator" content="@helpdeskapp" />
-<meta name="twitter:url" content='http://blog.helpdeskapp.ru/blog/tags/уведомления.html' />
+<meta name="twitter:url" content='http://blog.helpdeskapp.ru/blog/tags/хеш-теги.html' />
 <meta name="twitter:title" content='Helpdeskapp блог / Статьи сгруппированные по тегам' />
 <meta name="twitter:description" content='Helpdeskapp — сервис для совместного управления проектами' />
 <meta name="twitter:image" content='' />
@@ -68,10 +68,10 @@
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             <div class="posts">
                 <article class="post">
-  <h2><a href="/blog/notification-settings/">Настройка уведомлений</a></h2>
+  <h2><a href="/blog/hastags-for-issues/">Теги для задач</a></h2>
 
   <ul class="meta list-inline">
-  <li>10 Май 2014</li>
+  <li>06 Октябрь 2014</li>
   <li>
     <img alt="" class="img-circle img-avatar" height="24" src="https://secure.gravatar.com/avatar/6279bc07cdb06a5fe08a02816887d4d0.jpg" width="24">
     tab
@@ -81,22 +81,91 @@
 
 
   <div class="content">
-    <p>В Helpdeskapp есть два типа уведомлений: о назначении исполнителем задачи и о новых комментариях к вашим задачам.
-Все уведомления можно найти на странице уведомлений, копия уведомления отправляется на электронную почту указанную при регистрации аккаунта.</p>
+    <p>В <a href="http://blog.helpdeskapp.ru/blog/new-layout/">новой версии</a> появилась возможность помечать задачи ограниченным набором тегов:
+«Исправление», «Улучшение», «Ошибка» или «Поддержка». Сегодня мы подумали, что помечать задачи можно любыми тегами, например для
+их группировки.</p>
 
-<p>Сегодня мы добавили возможность управлять уведомлениями, которые вы будете получать.
-Для этого на странице настроек аккаунта просто выберите какие вы хотите получать уведомления, либо отключите их вовсе.</p>
+<p>При разработке <a href="https://helpdeskapp.ru">helpdeskapp</a> мы используем систему контроля версий <a href="http://git-scm.com">git</a> и для каждой новой
+версии helpdeskapp добавляем новую ветку (branch). Очень скоро стало понятно, что при работе над новой версией необходимо сосредоточится
+на задачах связанных с этим релизом. Хеш-теги помогают сгруппировать задачи связанные с одним релизом.</p>
 
-<p><img alt="Настройка уведомлений" src="https://cloud.helpdeskapp.ru/files/141/850-558/notification-settings.png" /></p>
+<p><img alt="Теги для задач" src="https://cloud.helpdeskapp.ru/files/1166/850-540/hastags-for-issues.png" /></p>
+
+<p>Для этого при добавлении новых задач просто нужно добавлять хеш-тег с названием бранча над которым сейчас ведется активная работа,
+например #board или #timetracking. Таким образом на доске можно отфильтровать задачи связанные с определенным релизом просто кликнув по
+тегу.</p>
 
   </div>
 
   <div class="more">
-    <a href="/blog/notification-settings/">Подробнее</a>
+    <a href="/blog/hastags-for-issues/">Подробнее</a>
   </div>
 
   <ul class="tags list-inline">
-    <li><a href="/blog/tags/уведомления.html">уведомления</a></li>
+    <li><a href="/blog/tags/задача.html">задача</a></li>
+    <li><a href="/blog/tags/канбан.html">канбан</a></li>
+    <li><a href="/blog/tags/хеш-теги.html">хеш-теги</a></li>
+</ul>
+
+</article>
+
+  <article class="post">
+  <h2><a href="/blog/new-layout/">Новая версия helpdeskapp</a></h2>
+
+  <ul class="meta list-inline">
+  <li>25 Сентябрь 2014</li>
+  <li>
+    <img alt="" class="img-circle img-avatar" height="24" src="https://secure.gravatar.com/avatar/6279bc07cdb06a5fe08a02816887d4d0.jpg" width="24">
+    tab
+  </li>
+  <li>изменения</li>
+</ul>
+
+
+  <div class="content">
+    <h4 id="section">Методология канбан</h4>
+
+<p>В новой версии <a href="https://helpdeskapp.ru">helpdeskapp</a> работа с задачами основана на методологии канбан: все задачи представляются карточками на доске.
+Мы полностью отказались от списочных видов. Теперь каждая задача находится в одном из четырех столбцов: «Backlog», «Todo», «Doing» или «Done».
+Перенести задачу между столбцами можно с помощью Drag&amp;Drop. Подробнее о канбан можно прочитать в
+<a href="http://docs.helpdeskapp.ru/docs/freelancer-adding-issues/">документации</a>.</p>
+
+<p><img alt="Все задачи" src="https://cloud.helpdeskapp.ru/files/1152/850-524/freelancer-board.png" /></p>
+
+<p>Теперь все задачи собраны на одной странице, с помощью фильтров можно выбрать только задачи определенной организации, проекта или с нужным
+приоритетом.</p>
+
+<h4 id="section-1">Теги для задач</h4>
+
+<p>В новой версии появилась возможность добавлять теги для задач: «Исправление», «Улучшение», «Ошибка» или «Поддержка». Чтобы пометить задачу
+каким-нибудь тегом, нужно при добавлении/редактировании задачи добавить #fix, #feature, #bug или #support. У одной задачи тегов может быть
+несколько.</p>
+
+<p>Все задачи которые добавляются через электронную почту автоматически помечаются тегом «Поддержка». Таким образом службе поддержки ваших
+проектов гораздо легче найти такие задачи и отреагировать на них.</p>
+
+<h4 id="section-2">Профиль пользователя</h4>
+
+<p>Мы немного обновили профиль пользователя, теперь можно добавить вашу контактную информацию. Если у вас заполнен профиль пользователя, то
+во все шаблоны писем отправляемых с помощью helpdeskapp будет добавлена ваша контактная информация.</p>
+
+<p><img alt="Профиль пользователя" src="https://cloud.helpdeskapp.ru/files/1144/850-526/signup-profile.png" /></p>
+
+<h4 id="section-3">Добавление задач по почте</h4>
+
+<p>Теперь у каждого проекта появился адрес электронной почты вида <em>SECRET@inbound.helpdeskapp.ru</em> вся почта отправленная на этот адрес автоматически
+будет добавлена в проект в виде задач. Если в письме есть вложения, то они так же будут добавлены к задаче.</p>
+
+  </div>
+
+  <div class="more">
+    <a href="/blog/new-layout/">Подробнее</a>
+  </div>
+
+  <ul class="tags list-inline">
+    <li><a href="/blog/tags/канбан.html">канбан</a></li>
+    <li><a href="/blog/tags/задача.html">задача</a></li>
+    <li><a href="/blog/tags/хеш-теги.html">хеш-теги</a></li>
 </ul>
 
 </article>
